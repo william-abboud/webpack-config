@@ -1,0 +1,27 @@
+@import '~normalize.css/normalize.css';
+
+$site-bg-color: navy;
+$background-img: "./assets/images/site-background.jpg";
+
+@font-face {
+	font-family: 'Montserrat-regular';
+	src: url('./assets/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+		url('./assets/fonts/montserrat/Montserrat-Regular.woff') format('woff');
+}
+
+html {
+	font-family: "Montserrat-regular", sans-serif, Arial;
+}
+
+body {
+	background-image: url($background-img);
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	padding: 10px;
+}
+
+h2 {
+	color: lime;
+}
