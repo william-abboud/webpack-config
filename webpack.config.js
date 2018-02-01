@@ -182,4 +182,5 @@ module.exports = env => {
 		- react optimize plugins
 		- inline manifest in HTML to save request
 		- editorconfig
+		- Add meta HTML tags
 */
