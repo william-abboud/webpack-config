@@ -1,7 +1,7 @@
 {
-  "name": "weboack-last-chance",
+  "name": "webpack-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack configuration and sample modern front end scaffolding",
   "main": "src/app.js",
   "scripts": {
     "build": "webpack --env.production",
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "William Abboud",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
