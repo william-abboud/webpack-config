@@ -169,18 +169,3 @@ module.exports = env => {
 		plugins
 	};
 };
-
-/*
-	TODO:
-		- Tests
-		- Stylelint
-		- ESLint
-		- srcset
-		- sprites
-		- placeholder images
-		- svg images
-		- react optimize plugins
-		- inline manifest in HTML to save request
-		- editorconfig
-		- Add meta HTML tags
-*/
