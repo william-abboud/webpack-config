@@ -38,5 +38,12 @@
 	
 	"plugins": [
 		"syntax-dynamic-import"
-	]
+	],
+
+	"env": {
+		"test": {
+			"presets": ["env", "react", "stage-3"],
+			"plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+		}
+	}
 }

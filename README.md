@@ -28,8 +28,9 @@ In the :open_file_folder: `src` folder you will find the following folders:
  - :open_file_folder: `assets` - Use to hold assets such as fonts, images, json files and other complimentary site information.
 	 - :open_file_folder: `fonts` - Place `.woff` and `.woff2` files here. The folder contains a sample [**Montserrat** ](https://www.fontsquirrel.com/fonts/montserrat) font files.
 	 - :open_file_folder: `images` - Place your images here. I've included sample images here. Supported formats: ```.jpg, .jpeg, .gif, .png, .svg ```;
-	 - :open_file_folder: `js` - Place your JavaScript `.js` and JSX `.jsx` files here.
-	 - :open_file_folder: `scss` - Place your `.scss` files here.
+ - :open_file_folder: `js` - Place your JavaScript `.js` and JSX `.jsx` files here.
+ - :open_file_folder: `scss` - Place your `.scss` files here.
+ - :open_file_folder: `test` - Place your `.test.js` files here.
 
  - `index.html` - This is your base index.html file template. Webpack will inject bundled assets or style tags in it via the **HTMLWebpackPlugin**.
  - `index.js` - File is named `index` by convention. Webpack knows this will be the starting point of building dependency graph. This is the starting point of the web application. It imports the `main.scss` file and `babel-polyfill`. It also contains an example code to show Hot Module Replacement (**HMR**) and it imports an example `hello-world.js` module.
@@ -51,6 +52,7 @@ usage of a task runner such as `Gulp` or `Grunt`.
 
  - To build your project for production execute: `$ npm run build`
  - To build your project for development: `$ npm start`
+ - To run test in your project `$ npm test`
  - To give statistics for your webpack build: `$ npm run stats` and the generated `stats.json` file to: [Stats visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
 ### :gift: Features:
@@ -83,7 +85,8 @@ usage of a task runner such as `Gulp` or `Grunt`.
  - :airplane: | JavaScript minification and optimization powered by `UglifyJS`
  - :bar_chart: | Build statistics 
  - :chart_with_upwards_trend: | Bundle analysis with `BundleAnalyzerPlugin`
- - :earth_americas: | Browsers supported: 
+ - :bullettrain_side: | Testing with Jest
+ - :earth_americas: | Browsers supported:
 	 - last 2 chrome versions
 	 - last 2 firefox versions
 	 - last 2 edge versions
@@ -122,4 +125,3 @@ usage of a task runner such as `Gulp` or `Grunt`.
  - Babel optimization plugins
  - Responsive images on build
  - StyleLint
- - Test framework
