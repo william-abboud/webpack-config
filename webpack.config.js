@@ -105,11 +105,14 @@ module.exports = env => {
 
   return {
     entry: {
-      app: PATHS.app,
+      app: ['react-hot-loader/patch', PATHS.app],
     },
     output: {
       filename: isProduction ? "[name][chunkhash:8].js" : "[name].js",
       path: PATHS.build
+    },
+    resolve: {
+      extensions: ['.js', '.jsx'],
     },
     module: {
       rules: [
@@ -160,12 +163,12 @@ module.exports = env => {
       bonjour: true,
       https: true,
       overlay: true,
-      hotOnly: true,
+      hot: true,
       quiet: true, // use friendly errors plugin
       stats: "errors-only",
       host: "0.0.0.0", // access server externally
     },
-    devtool: isProduction ? "source-map" : "eval-source-map",
+    devtool: isProduction ? "source-map" : "cheap-module-source-map",
     plugins
   };
 };

@@ -37,7 +37,8 @@
   ],
 
   "plugins": [
-    "syntax-dynamic-import"
+    "react-hot-loader/babel",
+    "syntax-dynamic-import",
   ],
 
   "env": {
