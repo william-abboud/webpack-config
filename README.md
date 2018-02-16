@@ -11,7 +11,7 @@ Projects such as React Create App are ready made solutions. Black boxes. I wish 
 
 ### :electric_plug: Installation:
 ---
- #### 1. Clone this repository: 
+ #### 1. Clone this repository:
 
 `$ git clone https://github.com/william-abboud/webpack-config.git`
 
@@ -26,8 +26,8 @@ The purpose of this repository is to give you a base structure for creating mode
 In the :open_file_folder: `src` folder you will find the following folders:
 
  - :open_file_folder: `assets` - Use to hold assets such as fonts, images, json files and other complimentary site information.
-	 - :open_file_folder: `fonts` - Place `.woff` and `.woff2` files here. The folder contains a sample [**Montserrat** ](https://www.fontsquirrel.com/fonts/montserrat) font files.
-	 - :open_file_folder: `images` - Place your images here. I've included sample images here. Supported formats: ```.jpg, .jpeg, .gif, .png, .svg ```;
+   - :open_file_folder: `fonts` - Place `.woff` and `.woff2` files here. The folder contains a sample [**Montserrat** ](https://www.fontsquirrel.com/fonts/montserrat) font files.
+   - :open_file_folder: `images` - Place your images here. I've included sample images here. Supported formats: ```.jpg, .jpeg, .gif, .png, .svg ```;
  - :open_file_folder: `js` - Place your JavaScript `.js` and JSX `.jsx` files here.
  - :open_file_folder: `scss` - Place your `.scss` files here.
  - :open_file_folder: `test` - Place your `.test.js` files here.
@@ -80,46 +80,44 @@ usage of a task runner such as `Gulp` or `Grunt`.
  - :skull: | Dead code elimination
  - :globe_with_meridians: | Environment setting
  - :checkered_flag: | `Autoprefixer` support to prefix outputted CSS
- - :put_litter_in_its_place: | CSS minification and optimization powered by `cssnano` 
+ - :put_litter_in_its_place: | CSS minification and optimization powered by `cssnano`
  - :wastebasket: | Hashing filenames for predictable and persistent browser caching
  - :airplane: | JavaScript minification and optimization powered by `UglifyJS`
- - :bar_chart: | Build statistics 
+ - :bar_chart: | Build statistics
  - :chart_with_upwards_trend: | Bundle analysis with `BundleAnalyzerPlugin`
  - :bullettrain_side: | Testing with Jest
+ - :eyes: | ESLint with support for ReactJS Linting
  - :earth_americas: | Browsers supported:
-	 - last 2 chrome versions
-	 - last 2 firefox versions
-	 - last 2 edge versions
-	 - last 2 opera versions
-	 - last 2 ChromeAndroid versions
-	 - safari >= 9.3
-	 - ie 11
+   - last 2 chrome versions
+   - last 2 firefox versions
+   - last 2 edge versions
+   - last 2 opera versions
+   - last 2 ChromeAndroid versions
+   - safari >= 9.3
+   - ie 11
 
 ### FAQ
 ---
  1. **Q: Why don't you have separate config files for production and development ?**
-	 **A**: I like to keep things in one place. I figured I don't have that much of a difficult configuration and I decided
-	 to go ahead and sacrifice extendability for simplicity at this stage of the project.
- 
+   **A**: I like to keep things in one place. I figured I don't have that much of a difficult configuration and I decided
+   to go ahead and sacrifice extendability for simplicity at this stage of the project.
+
  2. **Q: Why do you support IE 11 ?**
-	 **A**: The reality is IE 11 is still heavily used and I can't afford to neglect it. Still supporting it is a reality check for me that all those moms and dads that still use IE 11 can have a good experience on the web just as their kids on Chrome.
+   **A**: The reality is IE 11 is still heavily used and I can't afford to neglect it. Still supporting it is a reality check for me that all those moms and dads that still use IE 11 can have a good experience on the web just as their kids on Chrome.
 
 3.  **Q: Why do you exclude typed arrays ?**
-	 **A**: I've never encountered a scenario on the web where I would need typed arrays so I figured might as well cut them out of the build. If I ever need them, I'll bring them back.
+   **A**: I've never encountered a scenario on the web where I would need typed arrays so I figured might as well cut them out of the build. If I ever need them, I'll bring them back.
 
 4.  **Q: Why Webpack over Gulp or Grunt ?**
-	 **A**: I've used Browserify with Gulp and Grunt. I feel the community is strongly moving to Webpack because of its many features and as the setup is getting easier and the documentation comprehensive this will be the finalist in Build wars at the end of the tunnel. 
+   **A**: I've used Browserify with Gulp and Grunt. I feel the community is strongly moving to Webpack because of its many features and as the setup is getting easier and the documentation comprehensive this will be the finalist in Build wars at the end of the tunnel.
 
 5.  **Q: Why no CSS modules ?**
-	 **A**: In my opinion BEM methodology is enough to make your CSS maintainable. It basically removes specificity issues and also describes your components semantically. Also enforcing a Component based web architecture whether with or without libraries such as React or Vue will perfectly complement BEM class naming.
+   **A**: In my opinion BEM methodology is enough to make your CSS maintainable. It basically removes specificity issues and also describes your components semantically. Also enforcing a Component based web architecture whether with or without libraries such as React or Vue will perfectly complement BEM class naming.
 
 
 ### TODO
 
 ---
-
- - ESLint
- - Editorconfig
  - Inline Manifest in HTML
  - React optimization plugins
  - Babel optimization plugins
