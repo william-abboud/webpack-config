@@ -123,3 +123,5 @@ usage of a task runner such as `Gulp` or `Grunt`.
  - Babel optimization plugins
  - Responsive images on build
  - StyleLint
+ - ESLintignore
+ 
