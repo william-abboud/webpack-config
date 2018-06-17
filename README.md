@@ -30,19 +30,23 @@ In the :open_file_folder: `src` folder you will find the following folders:
    - :open_file_folder: `fonts` - Place `.woff` and `.woff2` files here. The folder contains a sample [**Montserrat** ](https://www.fontsquirrel.com/fonts/montserrat) font files.
    - :open_file_folder: `images` - Place your images here. I've included sample images here. Supported formats: ```.jpg, .jpeg, .gif, .png, .svg ```;
  - :open_file_folder: `js` - Place your JavaScript `.js` and JSX `.jsx` files here.
- - :open_file_folder: `scss` - Place your `.scss` files here.
+ - :open_file_folder: `styles` - Place your `.scss` files here.
  - :open_file_folder: `test` - Place your `.test.js` files here.
 
  - `index.html` - This is your base index.html file template. Webpack will inject bundled assets or style tags in it via the **HTMLWebpackPlugin**.
- - `index.js` - File is named `index` by convention. Webpack knows this will be the starting point of building dependency graph. This is the starting point of the web application. It imports the `main.scss` file and `babel-polyfill`. It also contains an example code to show Hot Module Replacement (**HMR**) and it imports an example `hello-world.js` module.
- - `main.scss` - The main SASS file. Used to set defaults and import `normalize.css`.
+ - `index.js` - File is named `index` by convention. Webpack knows this will be the starting point of building dependency graph. This is the starting point of the web application. It imports the `style.scss` file and `babel-polyfill`. It also contains an example code to show Hot Module Replacement (**HMR**).
+ - `style.scss` - The main SASS file.
 
 Outside the `src` folder you also get the following treats:
 
  - :chocolate_bar: `.babelrc` - This is Babel's configuration file. It describes the target browsers, the syntax it polyfills and the features it uses and excludes.
+ - :chocolate_bar: `.eslintrc` - This is ESLint's configuration file. It contains rules and options for configuring ESLint.
  - :ice_cream: `.browserslistrc` - Configuration file with YAML syntax in it describing the supported browsers. This file is used by tools such as Autoprefixer and Babel (unfortunately there is a bug so I needed to explicitly define the supported browsers in `.babelrc`).
  - :honey_pot: `package.json` - Describes development and normal dependencies as well as provide different commands for bundling.
- - :cookie: `webpack.config.json` - The maestro. This is where all the magic configuration is. This file contains both development and production build configurations.
+ - :cookie: `webpack-paths.config.js` - This file is a central location exporting utilities to define the src and dist folder locations.
+ - :cookie: `webpack.common.js` - The maestro. This is where all the common webpack configuration resides. 
+ - :cookie: `webpack.dev.js` - The development webpack configuration. You will only find development specific configurations here.
+ - :cookie: `webpack.prod.js` - The productuon webpack configuration. You will only find production specific configurations here.
 
 ### Usage:
 
@@ -111,6 +115,7 @@ usage of a task runner such as `Gulp` or `Grunt`.
 ### TODO
 
 ---
+ - Add Prettier and drop ESLint stylistic rules
  - Inline Manifest in HTML
  - React optimization plugins
  - Babel optimization plugins
