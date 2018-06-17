@@ -3,20 +3,18 @@
     [
       "env",
       {
-        "modules": false, // webpack handles that
+        "modules": false,
         "useBuiltIns": true,
-        "targets": { // babel not picking .browserslistrc
+        "targets": {
           "browsers": [
-            "last 2 chrome versions",
-            "last 2 firefox versions",
-            "last 2 edge versions",
-            "last 2 opera versions",
+            "last 2 Chrome versions",
             "last 2 ChromeAndroid versions",
-            "safari >= 9.3",
-            "ie 11"
-          ],
+            "last 2 Edge versions",
+            "last 2 Firefox versions",
+            "last 2 Safari versions",
+            "last 2 iOS versions"
+          ]
         },
-        // https://github.com/babel/babel-preset-env/blob/master/data/built-in-features.js
         "exclude": [
           "es6.typed.array-buffer",
           "es6.typed.data-view",
@@ -28,9 +26,9 @@
           "es6.typed.int32-array",
           "es6.typed.uint32-array",
           "es6.typed.float32-array",
-          "es6.typed.float64-array",
+          "es6.typed.float64-array"
         ]
-      },
+      }
     ],
     "react",
     "stage-3"
@@ -38,7 +36,7 @@
 
   "plugins": [
     "react-hot-loader/babel",
-    "syntax-dynamic-import",
+    "syntax-dynamic-import"
   ],
 
   "env": {
