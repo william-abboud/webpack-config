@@ -1,13 +1,10 @@
-import './main.scss';
 import "babel-polyfill";
-import { h2 } from './js/hello-world';
+import './styles/style.scss';
+import { render } from 'react-dom';
+import React from 'react';
+import App from './js/app';
 
-document.body.prepend(h2);
-
-if (process.env.NODE_ENV !== "production") {
-  if (module.hot) {
-    module.hot.accept('./js/hello-world', () => {
-      document.body.replaceChild(h2, document.body.firstChild);
-    });
-  }
-}
+render(
+  <App />,
+  document.getElementById('root')
+);
